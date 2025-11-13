@@ -1,30 +1,121 @@
 # Curador Multiagente de Roadmaps Tech con RAG y Base Vectorial
 
-Proyecto académico que implementa un asistente inteligente para generar roadmaps de estudio personalizados
-(Frontend, Backend, DevOps, Mobile) usando:
+*Sistema Inteligente para Generación de Rutas de Aprendizaje
+Personalizadas*
 
-- Extracción de PDFs/TXT desde `data/`
-- Chunking (80-150 palabras)
-- Embeddings con `sentence-transformers/all-MiniLM-L6-v2`
-- Base vectorial en memoria con FAISS
-- Búsqueda por similitud (coseno)
-- Arquitectura multiagente (extractor, chunking, indexación, consulta, planificación, respuesta, guardrails)
-- Interfaz en Streamlit
+Este proyecto académico implementa un **asistente inteligente
+multiagente** capaz de generar **roadmaps de estudio personalizados**
+(Frontend, Backend, DevOps, Mobile o cualquier área técnica) utilizando
+**procesamiento de documentos, embeddings, recuperación semántica
+(RAG)** y una interfaz ligera en **Streamlit**.
 
-## Cómo usar
+El sistema integra componentes modernos de IA:
 
-1. Crear entorno e instalar dependencias:
+-   Extracción y procesamiento de PDFs/TXT desde `data/`
+-   Chunking optimizado (80--150 palabras)
+-   Embeddings con `sentence-transformers/all-MiniLM-L6-v2`
+-   Base vectorial en memoria con **FAISS**
+-   Recuperación semántica vía similitud coseno
+-   Arquitectura **multiagente**:
+    -   Extractor
+    -   Chunker
+    -   Indexador vectorial
+    -   Recuperador RAG
+    -   Planificador de roadmap
+    -   Redactor final
+    -   Guardrails para control de calidad
+-   Interfaz de usuario construida en **Streamlit**
 
-```bash
+## 🧠 ¿Qué hace este sistema?
+
+1.  Lee documentos técnicos almacenados en `data/`.
+2.  Fragmenta el contenido en chunks semánticamente coherentes.
+3.  Genera embeddings vectoriales con modelos eficientes.
+4.  Indexa todo en una base vectorial FAISS.
+5.  Utiliza recuperación semántica (RAG) para extraer información
+    relevante según el objetivo del usuario.
+6.  Los agentes colaboran para:
+    -   analizar inputs del usuario,
+    -   buscar contenido relevante,
+    -   organizar temas según su tiempo disponible,
+    -   redactar un roadmap claro, secuencial y comprensible.
+7.  Streamlit muestra el roadmap final listo para usar.
+
+## 📦 Requisitos Previos
+
+-   Python 3.10 o superior\
+-   pip actualizado\
+-   Modelos de `sentence-transformers` descargables desde HuggingFace
+
+## ⚙️ Instalación y Uso
+
+### 1. Instalar dependencias
+
+``` bash
 pip install -r requirements.txt
 ```
 
-2. Agregar documentos PDF/TXT con roadmaps a la carpeta `data/`.
+### 2. Añadir documentos técnicos
 
-3. Ejecutar la aplicación:
+Agrega archivos **PDF o TXT** dentro de la carpeta:
 
-```bash
+    data/
+
+### 3. Ejecutar la aplicación
+
+``` bash
 streamlit run app.py
 ```
 
-Luego abre el enlace local que te da Streamlit y genera tu roadmap personalizado.
+Accede desde:
+
+    http://localhost:8501
+
+## 🧩 Arquitectura Técnica
+
+    data/ → Agente Extractor → Chunking → Embeddings → FAISS → Agente RAG
+           → Agente Planificador → Agente Redactor → Roadmap Final
+
+### Componentes Clave
+
+-   **Extractor:** lee y normaliza documentos.
+-   **Chunker:** fragmenta en 80-150 palabras.
+-   **Indexador (FAISS):** almacena embeddings.
+-   **Agente RAG:** recupera información relevante.
+-   **Planificador:** estructura el roadmap según tiempo y objetivos.
+-   **Redactor:** genera el documento final coherente.
+-   **Guardrails:** validan calidad y formato.
+
+## 📚 Tecnologías Utilizadas
+
+-   Python 3.10+\
+-   Streamlit\
+-   LangChain / LangGraph\
+-   Sentence-Transformers\
+-   FAISS\
+-   PyPDF2 / Unstructured
+
+## 📈 Resultados Obtenidos
+
+-   Roadmaps personalizados según objetivos reales.\
+-   Uso eficiente de RAG + Multiagentes.\
+-   Integración fluida entre embeddings, chunking y búsqueda vectorial.\
+-   Interfaz simple para demostrar un flujo complejo de IA.
+
+## 🔮 Trabajo Futuro
+
+-   Bases vectoriales persistentes (Milvus, Pinecone).\
+-   Agente evaluador del progreso.\
+-   Planificación semanal dinámica.\
+-   Integración con APIs externas.\
+-   Roadmaps adaptativos según desempeño.
+
+## 👤 Autor
+
+**Juan Sebastián Espinosa**\
+Universidad Tecnológica de Pereira\
+Curso: Introducción a la Inteligencia Artificial
+
+## 📄 Licencia
+
+Proyecto disponible para uso académico y educativo.
