@@ -111,8 +111,9 @@ Accede desde:
 -   Roadmaps adaptativos según desempeño.
 
 ## 👤 Autor
-
-**Juan Sebastián Espinosa**\
+Claudia Castaño
+Juan José Restrepo
+Santiago Ospina
 Universidad Tecnológica de Pereira\
 Curso: Introducción a la Inteligencia Artificial
 
