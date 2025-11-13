@@ -111,9 +111,9 @@ Accede desde:
 -   Roadmaps adaptativos según desempeño.
 
 ## 👤 Autor
-Claudia Castaño
+Claudia Castaño Mendoza,
 
-Juan José Restrepo
+Juan José Restrepo Londoño,
 
 Santiago Ospina
 
