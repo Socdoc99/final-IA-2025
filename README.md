@@ -112,8 +112,11 @@ Accede desde:
 
 ## 👤 Autor
 Claudia Castaño
+
 Juan José Restrepo
+
 Santiago Ospina
+
 Universidad Tecnológica de Pereira\
 Curso: Introducción a la Inteligencia Artificial
 
