@@ -102,13 +102,7 @@ Accede desde:
 -   Integración fluida entre embeddings, chunking y búsqueda vectorial.\
 -   Interfaz simple para demostrar un flujo complejo de IA.
 
-## 🔮 Trabajo Futuro
 
--   Bases vectoriales persistentes (Milvus, Pinecone).\
--   Agente evaluador del progreso.\
--   Planificación semanal dinámica.\
--   Integración con APIs externas.\
--   Roadmaps adaptativos según desempeño.
 
 ## 👤 Autor
 Claudia Castaño Mendoza,
